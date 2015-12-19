@@ -1,34 +1,299 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid green;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+p{
+      color: #bbbaba;
 }
 
-.menu:before {
-  content: "[";
+
+header {
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
-.menu:after {
-  content: "]";
+
+header .menu {
+  margin-top: 2em;  
 }
 
-.menu > li {
+header .menu > li {
+  text-transform: uppercase;
   display: inline;
+  padding-right: 0.5em;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+a {    
+    color: #777;
+    text-decoration: none;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+}
+a:hover {
+    color: black;
+}
+a:active, a:focus {
+    color: #8dbf41;
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
+.banner {
+  background-color: gray;
+  height: 18em;
+  padding-top: 6em;
+  background-image: url('img/bricks.jpg');
+  margin-bottom: 4em;
+}
+
+.banner strong {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 100;
+}
+.banner p {
+  color: #8dbf41;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.banner a {
+  float:right;
+  background-color: #8dbf41;
+  color: white;
+  margin-top: 0.2em;
+  padding: 0.5em;
+  text-transform: capitalize;
+  font-size: 2em;
+}
+
+.home h2
+{
+    color: #8dbf41;
+    font-weight: 600;
+    font-size: 2.75em;
+}
+.home h3
+{
+    color: #8dbf41;
+}
+.home h4
+{  
+    color: #8dbf41;
+    font-size:1.8em;
+    margin: 0;
+}
+.home h5
+{
+    color: #3e454c;
+    font-size:1.7em;
+    margin: 0 0 15px 0; 
+
+}
+.home p{
+  text-align: justify;
+}
+.home .profilepic {
+  margin: 0 0.3em 0 0;
+  max-width: 149px;
+  max-height: 149px;
+}
+.home h5 strong {
+  font-size: 6em;
+  margin: -0.1em 0.1em 0 0;
+}
+.home h5 span {
+  color: #8dbf41;  
+}
+.career > ul > li{
+  list-style: none;
+  margin-top: 30px;
+}
+.career > ul > li span
+{
+  margin-right: 0.25em;
+  float: left;
+  text-align: center;
+  font-size: 1.5em;
+  color:white;
+  background-color: #8dbf41;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  border-radius: 70px;
+  line-height: 70px;
+  height: 70px;
+  width: 70px;
+}
+
+.career ul > li > strong > a {
+    display: block;
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 100;
+    color: #363f45;
+}
+
+.skills ul > li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.skills ul > li:before {
+    top: 7px;
+    left: -16px;
+    position: absolute;
+    line-height: 8px;
+    font-size: 8px;
+    color: #8dbf41;
+    font-family: FontAwesome;
+    content: '\f111';
+}
+
+.qualifications ul {
+  margin-left: -40px;
+}
+
+.qualifications li {
+    color: #bbbaba;
+    margin-bottom: 6px;
+}
+
+.featured ul > li {
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 30px;  
+}
+.featured ul > li {
+  list-style: none;
+}
+.featured{
+    padding-top: 3em;
+    padding-bottom: 8em;
+    margin-top: 4em;
+}
+.featured h2{
+    margin-bottom: 70px;  
+}
+.fullwidth{
+  width: 100%;
+}
+footer {
+    background: #31353d;
+    color: black;
+    padding-top: 6em;
+    padding-bottom: 7em;
+    color: #717885;
+    font-size: .90em;
+}
+footer a {
+    color: #717885;
+}
+
+footer .menu > li {
+  text-transform: uppercase;
+  display: block;
+}
+footer .addresslogo{
+  font-size: 1.4em;
+}
+footer .emaillogo {
+  font-size: 1.15em;
+}
+
+footer .footerlogo{
+  height: 2em;
+}
+footer .footerbanner{
+  margin-top: 3em;
+}
+footer h5{
+  color:white;
+}
+
+footer div  {
+  margin-bottom: 15px;
+}
+footer div > i {
+  vertical-align: top;
+  margin-right: 5px;
+  color: #8dbf41;
+}
+footer .address{
+  width: 100px;
+  display: inline-block;;
+}
+footer ul.menu{
   padding: 0;
+}
+
+footer .menu i{
+  display: none;
+}
+
+.about h2, .about h3, .about h4
+{
+  color: #8dbf41; 
+}
+.about h4{
+  margin:0;
+  font-size:1em;
+}
+.about h5{
+  font-size: 1.1em;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #bbbaba;
+}
+.about h5 a{
+  font-weight: 600;
+}
+.about ul{
+  padding-left: 20px;
+  color: #bbbaba;
+}
+.award i
+{
+  font-size: 4em;
+  color: #8dbf41; 
+}
+.lightBackground
+{
+  background-color: #f4f5f5;
+}
+.adventure h2, .adventure h3, .adventure h4
+{
+  color: #8dbf41; 
+}
+.adventure ul
+{
+  margin-bottom: 4em;
+}
+
+.contact-details h2, .contact-details h3, .contact-details h4
+{
+  color: #8dbf41; 
+  font-weight: 600;
+}
+.contact-details a
+{
+  color: #8dbf41; 
+}
+.contact-map
+{
+  margin-bottom: 3em;
+}
+.firstinputs>div{
+  margin-top: 15px;
+}
+
+.left{
+  float:left;
+}
+.clearboth{
+  clear:both;
 }
 
 .testColor {
   background-color: gray;
 }
+

@@ -1,0 +1,44 @@
+﻿.navbar-default {
+    background-color: transparent;    
+}
+    
+.navbar {
+    margin: 75px 0 80px 0;
+    border: 0;
+}
+
+.navbar-header > a{
+    max-width: 220px;    
+}
+
+.nav > li > a {
+    padding: 10px 8px;
+}
+
+.navbar .navbar-collapse  {
+    margin-top: 20px;
+}
+
+.navbar .navbar-toggle {
+    margin-top: 30px;
+}
+
+.navbar-nav > li > a.active
+{
+    color: #8dbf41;   
+    
+    text-decoration: none;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;        
+ }
+ 
+ 
+ 
+ /*.navbar-nav a .active, 
+ .navbar-nav a .active:hover, 
+ .navbar-nav a .active:focus {
+      color: blue;
+      background: #d65c14;
+ }*/

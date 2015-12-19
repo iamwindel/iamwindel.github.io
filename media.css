@@ -1,0 +1,84 @@
+@media (min-width: 1200px)
+{
+
+}
+
+@media (max-width: 1199px) and (min-width: 992px)
+{    
+    .home h5 strong {
+      font-size: 5.2em;
+      margin: -0.1em 0.1em 0 0;
+    }
+    .home h5{
+      font-size: 1.5em;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px)
+{
+    .banner {
+      height: 16em;
+      padding-top: 6em;
+    }
+    .banner strong {
+      font-size: 2em;
+    }
+    .banner p {
+      font-size: 1.1em;
+    }
+    .banner a {
+      margin-top: 0.2em;
+      padding: 0.4em;
+      font-size: 1.75em;
+    }    
+    .home h5 strong {
+      font-size: 4.2em;
+      margin: -0.1em 0.1em 0 0;
+    }
+    .home h5{
+      font-size: 1.2em;
+    }
+}
+@media (max-width: 767px) and (min-width: 600px)
+{
+    .banner {
+      height: 14em;
+      padding-top: 5.5em;
+    }
+    .banner strong {
+      font-size: 1.75em;
+    }
+    .banner p {
+      font-size: 0.9em;
+    }
+    .banner a {
+      margin-top: 0.2em;
+      padding: 0.3em;
+      font-size: 1.5em;
+    }    
+}
+@media (max-width: 599px)
+{
+    .banner {
+      height: 14em;
+      padding-top: 5.5em;
+    }
+    .banner strong {
+      font-size: 1em;
+    }
+    .banner p {
+      font-size: 0.8em;
+    }
+    .banner a {
+      margin-top: 0.1em;
+      padding: 0.2em;
+      font-size: 1.2em;
+    }
+    .home h5 strong {
+      font-size: 4.2em;
+      display:block;
+    }
+    .home h5{
+      font-size: 1.2em;
+    }    
+}
