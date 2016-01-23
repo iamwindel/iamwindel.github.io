@@ -23,22 +23,31 @@
     margin-top: 30px;
 }
 
-.navbar-nav > li > a.active
+.navbar-nav > li > a{
+    text-transform: capitalize;    
+}
+
+.navbar-nav > li > a > i {
+    font-size: 1.5em;
+}
+
+
+
+.navbar-nav > li > a:hover i {
+
+    transform: rotate(765deg);
+    transition: transform 1s;
+}
+
+
+.navbar-default .navbar-nav>li>a.active,
+.crumbs .active
 {
-    color: #8dbf41;   
-    
-    text-decoration: none;
+    color: #8dbf41;
+    text-decoration: underline;;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;        
- }
+}
  
- 
- 
- /*.navbar-nav a .active, 
- .navbar-nav a .active:hover, 
- .navbar-nav a .active:focus {
-      color: blue;
-      background: #d65c14;
- }*/

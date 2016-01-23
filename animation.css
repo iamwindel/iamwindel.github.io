@@ -1,0 +1,60 @@
+
+.endTransFast {
+	opacity: 1; 
+	top:0; 
+	left:0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;	
+}
+
+.endTransSlow {
+	opacity: 1; 
+	top:0; 
+	left:0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;	
+}
+
+
+.endTransMid {
+	opacity: 1; 
+	top:0; 
+	left:0;
+    -webkit-transition: all 0.75s;
+    -moz-transition: all 0.75s;
+    -o-transition: all 0.75s;
+    transition: all 0.75s;	
+}
+
+
+.proj1Start {opacity: 0; left: 800px; top:0px;}
+.proj2Start {opacity: 0; left: 900px; top:400px;}
+.proj3Start {opacity: 0; left: -900px; top: 500px;}
+.proj4Start {opacity: 0; left: 0px; top: 250px;}
+.proj5Start {opacity: 0; left: 800px; top:-800px; }
+.proj6Start {opacity: 0; left: 0px; top:-900px; }
+.proj7Start {opacity: 0; left: 200px; top:-900px; }
+.proj8Start {opacity: 0; left: -700px; top:0px; }
+
+.featuredStart {opacity: 0; left: 0px; top:1000px; }
+
+.homeColumn1Start {opacity: 0; left: -1000px; top:0px;}
+.homeColumn2Start {opacity: 0; left: 0px; top:500px;}
+.homeColumn3Start {opacity: 0; left: 1000px; top:0px;}
+
+
+.disappear {
+	opacity: 0;
+}
+.appearSlow {
+	opacity: 1;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;	
+
+}
