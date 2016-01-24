@@ -246,8 +246,10 @@ footer .menu i{
   padding-left: 20px;
   color: #bbbaba;
 }
-.award i
-{
+.award {
+  padding: 50px 0;
+}
+.award i {
   font-size: 4em;
   color: #8dbf41; 
 }
@@ -295,7 +297,7 @@ footer .menu i{
 .crumbs {
     border-top: 11px solid #8dbf41;    
     border-bottom: 1px solid #e2e1e1;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     padding: 20px 0;
 }
 
@@ -325,4 +327,9 @@ footer .menu i{
     display: none;
     z-index: 999;
     cursor: pointer;
+}
+
+
+.modal-content {  
+  background-color: #dcdcdc;
 }
