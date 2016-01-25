@@ -31,13 +31,17 @@ a:active, a:focus {
 }
 
 
+
 .banner {
   background-color: gray;
   height: 18em;
   padding-top: 6em;
   background-image: url('img/bricks.jpg');
+  background-position: -300px 0;
   margin-bottom: 4em;
 }
+
+
 
 .banner strong {
   color: white;
@@ -54,11 +58,14 @@ a:active, a:focus {
   float:right;
   background-color: #8dbf41;
   color: white;
-  margin-top: 0.2em;
-  padding: 0.5em;
+  margin-top: 0.1em;
+  padding: 1em 0.5em;
   text-transform: capitalize;
   font-size: 2em;
 }
+
+
+
 
 .home h2
 {

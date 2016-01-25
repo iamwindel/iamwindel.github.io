@@ -1,4 +1,3 @@
-
 .endTransFast {
 	opacity: 1; 
 	top:0; 
@@ -18,7 +17,6 @@
     -o-transition: all 1s;
     transition: all 1s;	
 }
-
 
 .endTransMid {
 	opacity: 1; 
@@ -57,4 +55,59 @@
     -o-transition: all 2s;
     transition: all 2s;	
 
+}
+
+
+@keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0px; }
+}
+@-moz-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0px; }
+}
+@-webkit-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0px; }
+}
+@-ms-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0px; }
+}
+@-o-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0px; }
+}
+
+.banner{
+    animation: animatedBackground 1s ease ;
+    -moz-animation: animatedBackground 1s ease ;
+    -webkit-animation: animatedBackground 1s ease ;
+    -ms-animation: animatedBackground 1s ease ;
+    -o-animation: animatedBackground 1s ease ;    
+}
+
+
+.box {
+
+}
+
+.box:hover {
+  -webkit-transform: rotate(360deg);
+  background: #9351A6;
+  border-radius: 50%;
+}
+
+.rotate {
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.rotate:hover {
+  -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
