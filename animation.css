@@ -32,7 +32,7 @@
 .proj1Start {opacity: 0; left: 800px; top:0px;}
 .proj2Start {opacity: 0; left: 900px; top:400px;}
 .proj3Start {opacity: 0; left: -900px; top: 500px;}
-.proj4Start {opacity: 0; left: 100px; top: 150px;}
+.proj4Start {opacity: 0; left: 0; top: 100px;}
 .proj5Start {opacity: 0; left: 800px; top:-800px; }
 .proj6Start {opacity: 0; left: 0px; top:-900px; }
 .proj7Start {opacity: 0; left: 200px; top:-900px; }

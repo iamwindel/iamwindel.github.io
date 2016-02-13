@@ -23,7 +23,7 @@
         <div class="col-lg-9">
             <div class="container-fluid contactinfo contact-details">
                 <h3>CONTACT FORM</h3>        
-                <form name="frm" ng-submit="submitForm()" method="post" class="form-horizontal" >
+                <form name="frm" ng-submit="frm.$valid && submitForm()" method="post" class="form-horizontal" >
                     <div class="form-group firstinputs">
                         <div class="col-lg-4" ng-class="{ 'has-error has-feedback': frm.fullname.$dirty && frm.fullname.$invalid, 'has-success has-feedback': frm.fullname.$dirty && frm.fullname.$valid }" >
                             <input type="text" class="form-control" name="fullname" placeholder="Name:" ng-model="contact.fullname" required />
@@ -54,12 +54,13 @@
                             Prove that you are not a robot: <span>{{captcha1}} + {{captcha2}}</span>
                         </div>
                         <div class="col-xs-2" ng-class="{ 'has-error has-feedback': frm.captcha.$dirty && captcha1 + captcha2 != frm.captcha.$modelValue, 'has-success has-feedback': frm.captcha.$dirty && captcha1 + captcha2 == frm.captcha.$modelValue }" >
-                            <input type="text" class="form-control" name="captcha" placeholder="Name:" ng-model="captcha"  />
+                            <input type="text" class="form-control" name="captcha" placeholder="Answer:" ng-model="captcha" required />
                             <span ng-class="{'glyphicon glyphicon-remove form-control-feedback': frm.captcha.$dirty && captcha1 + captcha2 != frm.captcha.$modelValue, 'glyphicon glyphicon-ok form-control-feedback': frm.captcha.$dirty && captcha1 + captcha2 == frm.captcha.$modelValue}"></span>
+                            <span ng-show="frm.captcha.$dirty && captcha1 + captcha2 != frm.captcha.$modelValue" class="help-block">Incorrect answer</span>
                         </div>
                         <div class="col-xs-12">
                             <button type="button" class="btn btn-default defaultbutton-gray">CLEAR</button>
-                            <button type="submit" class="btn btn-success defaultbutton-green">SEND</button>
+                            <button type="submit" class="btn btn-success defaultbutton-green" ng-click="submitted=true">SEND</button>
                             <div class="spinner-container">
                                 <div class="spinner-loader"></div>
                             </div>
