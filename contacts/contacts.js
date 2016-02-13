@@ -9,7 +9,7 @@ angular.module('myApp.contacts', ['ngRoute'])
   });
 }])
 
-.controller('ContactsCtrl', ['$scope','$route','$http',function($scope, $route, $http) {
+.controller('ContactsCtrl', ['$scope','$route','$http','$location',function($scope, $route, $http, $location) {
 /*	$scope.fullname = '';
 	$scope.email = '';
 	$scope.phone = '';
@@ -26,7 +26,6 @@ angular.module('myApp.contacts', ['ngRoute'])
 
 	//... TODO: try not to pass the scope
 	$scope.submitForm = function() {
-		debugger;
 		if ($scope.captcha1 + $scope.captcha2 == $scope.captcha ) {		
 			$http({
 				method	: 'POST',
@@ -37,6 +36,7 @@ angular.module('myApp.contacts', ['ngRoute'])
 			})
 			.success(function(data){
 				alert("Message submitted. Thank you!");
+				$location.path('/home');
 			});
 		}
 	};
