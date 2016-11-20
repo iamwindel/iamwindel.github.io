@@ -94,7 +94,8 @@
 
 .box:hover {
   -webkit-transform: rotate(360deg);
-  background: #9351A6;
+  /*background: #9351A6;*/
+  background: #8dbf41;
   border-radius: 50%;
 }
 

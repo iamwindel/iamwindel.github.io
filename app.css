@@ -56,7 +56,8 @@ a:active, a:focus {
 }
 .banner a {
   float:right;
-  background-color: #8dbf41;
+  /*background-color: #8dbf41;*/
+  background-color: #777777;
   color: white;
   margin-top: 0.1em;
   padding: 1em 0.5em;
